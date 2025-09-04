@@ -9,6 +9,12 @@ RewriteRule ^index\.html$ / [R=301,L]
 # RewriteCond %{HTTPS} off
 # RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
+# MIME Types
+<IfModule mod_mime.c>
+    AddType application/xml .xml
+    AddType text/plain .txt
+</IfModule>
+
 # Security Headers
 <IfModule mod_headers.c>
     Header always set X-Content-Type-Options nosniff

@@ -1,0 +1,43 @@
+# 82 Lottery - Robots.txt
+# Website: https://82-lotterylogin.in
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://82-lotterylogin.in/sitemap.xml
+
+# Allow all major search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+# Disallow access to admin/development files
+Disallow: /.claude/
+Disallow: /.git/
+Disallow: /.htaccess
+Disallow: /assets/css/*.map
+Disallow: /assets/js/*.map
+
+# Allow access to important files
+Allow: /assets/css/style.css
+Allow: /assets/js/main.js
+Allow: /logo-transparent.png
+Allow: /sitemap.xml
+
+# Crawl delay (optional - adjust as needed)
+# Crawl-delay: 1
+
+# Host preference (helps with www vs non-www)
+# Host: https://82-lotterylogin.in
